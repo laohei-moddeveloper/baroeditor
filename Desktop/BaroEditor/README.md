@@ -6,6 +6,8 @@
 
 ![实际节点画布](Publishing/cover.png)
 
+中英工坊文案与本机更新包：[下载](https://github.com/laohei-moddeveloper/baroeditor/releases/tag/metadata-update-20261019) · [说明](../../docs/BILINGUAL-UPDATE-20261019.md)。本次文案更新不改变程序版本。
+
 ## 打开
 
 解压整个文件夹，双击 `BaroEditor.exe`。不要单独移动这个 EXE。

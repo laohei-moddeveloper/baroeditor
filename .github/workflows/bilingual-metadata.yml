@@ -1,0 +1,26 @@
+name: Package bilingual local updates
+on:
+  push:
+    tags:
+      - 'metadata-update-*'
+permissions:
+  contents: write
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Package existing applications and bilingual descriptions (no tests)
+        run: python tools/package_bilingual_updates.py --output dist/bilingual
+      - name: Upload downloadable update packages
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          UPDATE_TAG: ${{ github.ref_name }}
+        run: >-
+          gh release create "$UPDATE_TAG" dist/bilingual/*.zip dist/bilingual/SHA256SUMS.txt
+          --verify-tag --prerelease --latest=false
+          --title 'BaroEditor · 双版本中英简介更新 / Bilingual metadata update'
+          --notes-file docs/BILINGUAL-UPDATE-20261019.md

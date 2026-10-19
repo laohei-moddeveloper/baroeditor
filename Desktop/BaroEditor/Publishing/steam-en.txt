@@ -1,0 +1,16 @@
+[b]Build Barotrauma events on a draggable canvas—outside the game.[/b]
+A standalone Windows editor for 66 native Actions and 313 properties, with native event XML and extension-node support.
+
+• Drag Actions, arrange nodes, wire branches and search properties.
+• Script cards, batch dialogue, comparison conditions and GoTo/Label navigation.
+• Save layouts and floating drafts in projects; import localization while retaining original XML tags.
+• Export new XML or copy content. Local walkthroughs never execute gameplay effects.
+
+[b]Launch[/b]
+After subscribing, open [b]steamapps/workshop/content/602960/3819572370/Standalone/BaroEditor.exe[/b]. Enabling the Workshop entry in game does not launch it.
+Requires the [url=https://dotnet.microsoft.com/en-us/download/dotnet/10.0].NET 10 Windows Desktop Runtime x64[/url]; no LuaCs required. Keep the complete folder when downloading from GitHub.
+
+0.2.2 preview. Floating drafts are saved in projects and enter event XML only after connection. Complex events still need in-game validation.
+
+[url=https://github.com/laohei-moddeveloper/baroeditor]GitHub: source, standalone downloads and documentation[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3819517380]Need vanilla editor integration? Get the in-game edition[/url]

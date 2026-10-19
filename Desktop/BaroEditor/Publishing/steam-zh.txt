@@ -1,0 +1,16 @@
+[b]不用开游戏，拖动画布编写《潜渊症》事件。[/b]
+Windows 独立事件编辑器：66 个原版 Action、313 个属性，支持原生事件 XML 与扩展节点。
+
+• 拖入动作、摆放节点、连接分支，搜索动作与属性。
+• 剧本卡片、批量对话、比较条件、GoTo/Label 定位。
+• 工程保存布局与悬空草稿；导入多语言词条，导出保留原标签。
+• 导出新 XML 或复制内容；本地流程试播不执行游戏效果。
+
+[b]打开方式[/b]
+订阅下载后，打开 [b]steamapps/workshop/content/602960/3819572370/Standalone/BaroEditor.exe[/b]。仅在游戏模组列表勾选不会启动程序。
+需要 [url=https://dotnet.microsoft.com/en-us/download/dotnet/10.0].NET 10 Windows Desktop Runtime x64[/url]；无需 LuaCs。GitHub 下载后请保留完整文件夹。
+
+0.2.2 预览版。悬空草稿保存在工程中，连接后才进入事件 XML；复杂事件仍需在游戏中验证。
+
+[url=https://github.com/laohei-moddeveloper/baroeditor]GitHub：源码、独立下载与说明[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3819517380]需要原版编辑器对接？使用游戏内版[/url]

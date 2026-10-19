@@ -1,33 +1,30 @@
-BaroEditor|潜渊症通用事件编辑器【游戏内】
-
 [b]用原版界面编辑事件，保留原生 XML。[/b]
-导入已有事件，在树中查看 Action、分支、属性和子树；连续对话可以每行一句编辑，减少嵌套 XML 的手写工作。
+导入《潜渊症》事件 XML，在树与属性面板中编辑动作、分支和对话，减少手写嵌套内容。
 
-[b]能力范围[/b]
-动态识别当前游戏的原版 Action；通用属性编辑、子树 XML、节点复制/移动/删除、撤销重做。复杂 Action 使用通用编辑，并非每类都有专用图形向导。可载入游戏已加载事件，也可对接原版节点图。
+• 读取当前游戏 Action 与属性提示，支持中英文搜索。
+• 节点添加、复制、移动、撤销重做；简单连续对话每行一句编辑。
+• 导出新 XML、复制事件或整份文件，也可对接原版节点图。
 
-[b]汉化与搜索[/b]
-66 个原版动作及其属性显示中文，XML 原名保留。事件树、属性、动作添加和事件载入支持中英文关键词搜索；搜索保留父级上下文并使用延迟过滤、索引缓存。复制 XML 带换行缩进。
+[b]使用[/b]
+需要 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2559634234]LuaCs[/url] 客户端运行支持并允许 C# 模组。启用后，在主菜单按 F3 输入 [b]baroeditor[/b]，或从原版事件编辑器进入。无需服务器安装。
 
-[b]文件输出[/b]
-默认导出新 XML 到 %LOCALAPPDATA%/BaroEditor/Exports。提供复制选中事件或完整 XML；覆盖本地源文件是单独确认的高级操作，先备份并检查外部修改。游戏内存事件只能导出或复制，原版资源与工坊缓存保持只读。
+0.1.1 预览版。复杂动作使用通用属性/XML 编辑；完整节点图往返和复杂事件运行尚未充分验证。默认导出新文件，覆盖源文件另行确认并备份。
 
-[b]安装[/b]
-需要 LuaCsForBarotrauma 的客户端运行支持和 C# 模组许可。启用 LuaCs 与 BaroEditor，回主菜单按 F3 输入 baroeditor。原版事件编辑器也提供入口。不要求服务器安装。
-
-[b]性能与访问[/b]
-按操作处理 XML，缓存 Action 元数据，折叠树按需生成。无联网、遥测、目录扫描或导入事件执行。LuaCs C# 代码运行于游戏进程，是受信任代码，不是独立权限沙箱。运行包不改游戏 DLL，也不自动开启全局 C# 策略。
-
-[b]0.1.1 预览版[/b]
-671 项离线检查通过；基础游戏界面、批量对话窗口和元数据检查通过。本地 1.13.4.0 核对到 66 个 Action 与 313 个属性。封面为实际游戏内界面。本次新增搜索交互仍需人工核验；复杂事件运行和完整节点图往返尚未充分验证。
-
-[url=https://github.com/laohei-moddeveloper/baroeditor]GitHub 源码、独立下载和使用说明[/url]
-
-独立社区工具，非游戏官方组件。MIT License。
-
-[b]另一版本：独立程序[/b]
-不想打开游戏时，可以使用独立 Windows 工作台：所有原版动作都有可拖动、可点击编辑的画布节点，支持分支连线、通用属性、汉化搜索、工程保存和 XML 输出。独立版无需 LuaCs，需要 .NET 10 Windows Desktop Runtime。两版通过原生 XML 或复制粘贴互通，不要求同时订阅。
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3819572370]BaroEditor 通用事件编辑器【独立程序】[/url]
+[url=https://github.com/laohei-moddeveloper/baroeditor]GitHub：源码、下载与说明[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3819572370]无需开游戏？使用 Windows 独立版[/url]
 
 [b]English[/b]
-This is the in-game edition, requiring client-side LuaCs and C# support. Use the vanilla event editor with XML tree/property editing, event import, bilingual search and formatted clipboard output. The separate desktop edition provides a draggable canvas for all native Actions and runs without the game or LuaCs. Both editions exchange native event XML and can be installed separately; the desktop Workshop link is above.
+[b]Edit events in the vanilla interface. Keep native XML.[/b]
+Import Barotrauma event XML and edit Actions, branches and dialogue through a tree and property panel.
+
+• Discover Actions and property hints from the current game; search in Chinese or English.
+• Add, duplicate and move nodes, undo/redo, and batch-edit simple dialogue chains.
+• Export new XML, copy an event or full file, and transfer to the vanilla node graph.
+
+[b]Setup[/b]
+Requires the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2559634234]LuaCs[/url] client runtime with C# mods enabled. At the main menu, press F3 and enter [b]baroeditor[/b], or use the vanilla event-editor entry. No server installation required.
+
+0.1.1 preview. Complex Actions use generic attributes/XML; full graph round trips and complex event execution are not fully validated. Export creates a new file by default; source overwrite requires confirmation and backup.
+
+[url=https://github.com/laohei-moddeveloper/baroeditor]GitHub: source, downloads and documentation[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3819572370]Prefer working outside the game? Get the Windows standalone edition[/url]
